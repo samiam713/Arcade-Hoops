@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D340A89B2557A82B00EA958A /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D340A89A2557A82B00EA958A /* GameManager.swift */; };
 		D34E5FA825393B4C00566957 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34E5FA725393B4C00566957 /* AppDelegate.swift */; };
 		D34E5FAA25393B4C00566957 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34E5FA925393B4C00566957 /* ContentView.swift */; };
 		D34E5FAC25393B4C00566957 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = D34E5FAB25393B4C00566957 /* Experience.rcproject */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D340A89A2557A82B00EA958A /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
 		D34E5FA425393B4C00566957 /* Arcade Hoops.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Arcade Hoops.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D34E5FA725393B4C00566957 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D34E5FA925393B4C00566957 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 		D34E5FA625393B4C00566957 /* Arcade Hoops */ = {
 			isa = PBXGroup;
 			children = (
+				D340A89A2557A82B00EA958A /* GameManager.swift */,
 				D34E5FA725393B4C00566957 /* AppDelegate.swift */,
 				D34E5FA925393B4C00566957 /* ContentView.swift */,
 				D34E5FAB25393B4C00566957 /* Experience.rcproject */,
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D34E5FAA25393B4C00566957 /* ContentView.swift in Sources */,
+				D340A89B2557A82B00EA958A /* GameManager.swift in Sources */,
 				D34E5FA825393B4C00566957 /* AppDelegate.swift in Sources */,
 				D34E5FAC25393B4C00566957 /* Experience.rcproject in Sources */,
 			);
@@ -276,6 +280,7 @@
 				DEVELOPMENT_TEAM = Y975RXV2SM;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Arcade Hoops/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -297,6 +302,7 @@
 				DEVELOPMENT_TEAM = Y975RXV2SM;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Arcade Hoops/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
