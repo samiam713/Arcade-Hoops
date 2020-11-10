@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F4CC480E2557A90500F112EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CC480D2557A90500F112EB /* AppDelegate.swift */; };
+		F4CC48102557A90500F112EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CC480F2557A90500F112EB /* SceneDelegate.swift */; };
+		F4CC48122557A90500F112EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CC48112557A90500F112EB /* ContentView.swift */; };
+		F4CC48142557A90800F112EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4CC48132557A90800F112EB /* Assets.xcassets */; };
+		F4CC48172557A90800F112EB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4CC48162557A90800F112EB /* Preview Assets.xcassets */; };
+		F4CC481A2557A90800F112EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4CC48182557A90800F112EB /* LaunchScreen.storyboard */; };
+		F4CC48252557A90800F112EB /* Aracde_HoopsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CC48242557A90800F112EB /* Aracde_HoopsTests.swift */; };
+		F4CC48302557A90800F112EB /* Aracde_HoopsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CC482F2557A90800F112EB /* Aracde_HoopsUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F4CC48212557A90800F112EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4CC48022557A90500F112EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4CC48092557A90500F112EB;
+			remoteInfo = "Aracde-Hoops";
+		};
+		F4CC482C2557A90800F112EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4CC48022557A90500F112EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4CC48092557A90500F112EB;
+			remoteInfo = "Aracde-Hoops";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F4CC480A2557A90500F112EB /* Aracde-Hoops.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Aracde-Hoops.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4CC480D2557A90500F112EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F4CC480F2557A90500F112EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F4CC48112557A90500F112EB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F4CC48132557A90800F112EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F4CC48162557A90800F112EB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F4CC48192557A90800F112EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F4CC481B2557A90800F112EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4CC48202557A90800F112EB /* Aracde-HoopsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Aracde-HoopsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4CC48242557A90800F112EB /* Aracde_HoopsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aracde_HoopsTests.swift; sourceTree = "<group>"; };
+		F4CC48262557A90800F112EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4CC482B2557A90800F112EB /* Aracde-HoopsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Aracde-HoopsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4CC482F2557A90800F112EB /* Aracde_HoopsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aracde_HoopsUITests.swift; sourceTree = "<group>"; };
+		F4CC48312557A90800F112EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F4CC48072557A90500F112EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4CC481D2557A90800F112EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4CC48282557A90800F112EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F4CC48012557A90500F112EB = {
+			isa = PBXGroup;
+			children = (
+				F4CC480C2557A90500F112EB /* Aracde-Hoops */,
+				F4CC48232557A90800F112EB /* Aracde-HoopsTests */,
+				F4CC482E2557A90800F112EB /* Aracde-HoopsUITests */,
+				F4CC480B2557A90500F112EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F4CC480B2557A90500F112EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4CC480A2557A90500F112EB /* Aracde-Hoops.app */,
+				F4CC48202557A90800F112EB /* Aracde-HoopsTests.xctest */,
+				F4CC482B2557A90800F112EB /* Aracde-HoopsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4CC480C2557A90500F112EB /* Aracde-Hoops */ = {
+			isa = PBXGroup;
+			children = (
+				F4CC480D2557A90500F112EB /* AppDelegate.swift */,
+				F4CC480F2557A90500F112EB /* SceneDelegate.swift */,
+				F4CC48112557A90500F112EB /* ContentView.swift */,
+				F4CC48132557A90800F112EB /* Assets.xcassets */,
+				F4CC48182557A90800F112EB /* LaunchScreen.storyboard */,
+				F4CC481B2557A90800F112EB /* Info.plist */,
+				F4CC48152557A90800F112EB /* Preview Content */,
+			);
+			path = "Aracde-Hoops";
+			sourceTree = "<group>";
+		};
+		F4CC48152557A90800F112EB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F4CC48162557A90800F112EB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F4CC48232557A90800F112EB /* Aracde-HoopsTests */ = {
+			isa = PBXGroup;
+			children = (
+				F4CC48242557A90800F112EB /* Aracde_HoopsTests.swift */,
+				F4CC48262557A90800F112EB /* Info.plist */,
+			);
+			path = "Aracde-HoopsTests";
+			sourceTree = "<group>";
+		};
+		F4CC482E2557A90800F112EB /* Aracde-HoopsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F4CC482F2557A90800F112EB /* Aracde_HoopsUITests.swift */,
+				F4CC48312557A90800F112EB /* Info.plist */,
+			);
+			path = "Aracde-HoopsUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F4CC48092557A90500F112EB /* Aracde-Hoops */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4CC48342557A90800F112EB /* Build configuration list for PBXNativeTarget "Aracde-Hoops" */;
+			buildPhases = (
+				F4CC48062557A90500F112EB /* Sources */,
+				F4CC48072557A90500F112EB /* Frameworks */,
+				F4CC48082557A90500F112EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Aracde-Hoops";
+			productName = "Aracde-Hoops";
+			productReference = F4CC480A2557A90500F112EB /* Aracde-Hoops.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F4CC481F2557A90800F112EB /* Aracde-HoopsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4CC48372557A90800F112EB /* Build configuration list for PBXNativeTarget "Aracde-HoopsTests" */;
+			buildPhases = (
+				F4CC481C2557A90800F112EB /* Sources */,
+				F4CC481D2557A90800F112EB /* Frameworks */,
+				F4CC481E2557A90800F112EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4CC48222557A90800F112EB /* PBXTargetDependency */,
+			);
+			name = "Aracde-HoopsTests";
+			productName = "Aracde-HoopsTests";
+			productReference = F4CC48202557A90800F112EB /* Aracde-HoopsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F4CC482A2557A90800F112EB /* Aracde-HoopsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4CC483A2557A90800F112EB /* Build configuration list for PBXNativeTarget "Aracde-HoopsUITests" */;
+			buildPhases = (
+				F4CC48272557A90800F112EB /* Sources */,
+				F4CC48282557A90800F112EB /* Frameworks */,
+				F4CC48292557A90800F112EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4CC482D2557A90800F112EB /* PBXTargetDependency */,
+			);
+			name = "Aracde-HoopsUITests";
+			productName = "Aracde-HoopsUITests";
+			productReference = F4CC482B2557A90800F112EB /* Aracde-HoopsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4CC48022557A90500F112EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					F4CC48092557A90500F112EB = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					F4CC481F2557A90800F112EB = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = F4CC48092557A90500F112EB;
+					};
+					F4CC482A2557A90800F112EB = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = F4CC48092557A90500F112EB;
+					};
+				};
+			};
+			buildConfigurationList = F4CC48052557A90500F112EB /* Build configuration list for PBXProject "Aracde-Hoops" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F4CC48012557A90500F112EB;
+			productRefGroup = F4CC480B2557A90500F112EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4CC48092557A90500F112EB /* Aracde-Hoops */,
+				F4CC481F2557A90800F112EB /* Aracde-HoopsTests */,
+				F4CC482A2557A90800F112EB /* Aracde-HoopsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4CC48082557A90500F112EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4CC481A2557A90800F112EB /* LaunchScreen.storyboard in Resources */,
+				F4CC48172557A90800F112EB /* Preview Assets.xcassets in Resources */,
+				F4CC48142557A90800F112EB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4CC481E2557A90800F112EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4CC48292557A90800F112EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F4CC48062557A90500F112EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4CC480E2557A90500F112EB /* AppDelegate.swift in Sources */,
+				F4CC48102557A90500F112EB /* SceneDelegate.swift in Sources */,
+				F4CC48122557A90500F112EB /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4CC481C2557A90800F112EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4CC48252557A90800F112EB /* Aracde_HoopsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4CC48272557A90800F112EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4CC48302557A90800F112EB /* Aracde_HoopsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F4CC48222557A90800F112EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4CC48092557A90500F112EB /* Aracde-Hoops */;
+			targetProxy = F4CC48212557A90800F112EB /* PBXContainerItemProxy */;
+		};
+		F4CC482D2557A90800F112EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4CC48092557A90500F112EB /* Aracde-Hoops */;
+			targetProxy = F4CC482C2557A90800F112EB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F4CC48182557A90800F112EB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4CC48192557A90800F112EB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F4CC48322557A90800F112EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F4CC48332557A90800F112EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F4CC48352557A90800F112EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Aracde-Hoops/Preview Content\"";
+				DEVELOPMENT_TEAM = 5U22JX89C4;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Aracde-Hoops/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.teresatran.Aracde-Hoops";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F4CC48362557A90800F112EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Aracde-Hoops/Preview Content\"";
+				DEVELOPMENT_TEAM = 5U22JX89C4;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Aracde-Hoops/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.teresatran.Aracde-Hoops";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F4CC48382557A90800F112EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5U22JX89C4;
+				INFOPLIST_FILE = "Aracde-HoopsTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.teresatran.Aracde-HoopsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Aracde-Hoops.app/Aracde-Hoops";
+			};
+			name = Debug;
+		};
+		F4CC48392557A90800F112EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5U22JX89C4;
+				INFOPLIST_FILE = "Aracde-HoopsTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.teresatran.Aracde-HoopsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Aracde-Hoops.app/Aracde-Hoops";
+			};
+			name = Release;
+		};
+		F4CC483B2557A90800F112EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5U22JX89C4;
+				INFOPLIST_FILE = "Aracde-HoopsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.teresatran.Aracde-HoopsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Aracde-Hoops";
+			};
+			name = Debug;
+		};
+		F4CC483C2557A90800F112EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5U22JX89C4;
+				INFOPLIST_FILE = "Aracde-HoopsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.teresatran.Aracde-HoopsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Aracde-Hoops";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F4CC48052557A90500F112EB /* Build configuration list for PBXProject "Aracde-Hoops" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4CC48322557A90800F112EB /* Debug */,
+				F4CC48332557A90800F112EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4CC48342557A90800F112EB /* Build configuration list for PBXNativeTarget "Aracde-Hoops" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4CC48352557A90800F112EB /* Debug */,
+				F4CC48362557A90800F112EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4CC48372557A90800F112EB /* Build configuration list for PBXNativeTarget "Aracde-HoopsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4CC48382557A90800F112EB /* Debug */,
+				F4CC48392557A90800F112EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4CC483A2557A90800F112EB /* Build configuration list for PBXNativeTarget "Aracde-HoopsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4CC483B2557A90800F112EB /* Debug */,
+				F4CC483C2557A90800F112EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F4CC48022557A90500F112EB /* Project object */;
+}
