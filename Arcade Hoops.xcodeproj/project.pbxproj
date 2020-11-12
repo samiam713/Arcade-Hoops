@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		D340A89B2557A82B00EA958A /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D340A89A2557A82B00EA958A /* GameManager.swift */; };
 		D34E5FA825393B4C00566957 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34E5FA725393B4C00566957 /* AppDelegate.swift */; };
-		D34E5FAA25393B4C00566957 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34E5FA925393B4C00566957 /* ContentView.swift */; };
+		D34E5FAA25393B4C00566957 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34E5FA925393B4C00566957 /* GameView.swift */; };
 		D34E5FAC25393B4C00566957 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = D34E5FAB25393B4C00566957 /* Experience.rcproject */; };
 		D34E5FAE25393B4D00566957 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D34E5FAD25393B4D00566957 /* Assets.xcassets */; };
 		D34E5FB125393B4D00566957 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D34E5FB025393B4D00566957 /* Preview Assets.xcassets */; };
+		D3B628D4255B205F00778A9D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B628D3255B205F00778A9D /* LoginView.swift */; };
+		D3B628DC255B26C000778A9D /* CloudCommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B628DB255B26C000778A9D /* CloudCommunicator.swift */; };
+		D3B628E1255B353F00778A9D /* HighScoreStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B628E0255B353F00778A9D /* HighScoreStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D340A89A2557A82B00EA958A /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
 		D34E5FA425393B4C00566957 /* Arcade Hoops.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Arcade Hoops.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D34E5FA725393B4C00566957 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D34E5FA925393B4C00566957 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D34E5FA925393B4C00566957 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		D34E5FAB25393B4C00566957 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		D34E5FAD25393B4D00566957 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D34E5FB025393B4D00566957 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D34E5FB225393B4D00566957 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3B628D3255B205F00778A9D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		D3B628DB255B26C000778A9D /* CloudCommunicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudCommunicator.swift; sourceTree = "<group>"; };
+		D3B628E0255B353F00778A9D /* HighScoreStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +63,15 @@
 			isa = PBXGroup;
 			children = (
 				D340A89A2557A82B00EA958A /* GameManager.swift */,
+				D34E5FA925393B4C00566957 /* GameView.swift */,
 				D34E5FA725393B4C00566957 /* AppDelegate.swift */,
-				D34E5FA925393B4C00566957 /* ContentView.swift */,
+				D3B628D3255B205F00778A9D /* LoginView.swift */,
+				D3B628DB255B26C000778A9D /* CloudCommunicator.swift */,
 				D34E5FAB25393B4C00566957 /* Experience.rcproject */,
 				D34E5FAD25393B4D00566957 /* Assets.xcassets */,
 				D34E5FB225393B4D00566957 /* Info.plist */,
 				D34E5FAF25393B4D00566957 /* Preview Content */,
+				D3B628E0255B353F00778A9D /* HighScoreStore.swift */,
 			);
 			path = "Arcade Hoops";
 			sourceTree = "<group>";
@@ -144,10 +153,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D34E5FAA25393B4C00566957 /* ContentView.swift in Sources */,
+				D34E5FAA25393B4C00566957 /* GameView.swift in Sources */,
 				D340A89B2557A82B00EA958A /* GameManager.swift in Sources */,
+				D3B628DC255B26C000778A9D /* CloudCommunicator.swift in Sources */,
 				D34E5FA825393B4C00566957 /* AppDelegate.swift in Sources */,
+				D3B628D4255B205F00778A9D /* LoginView.swift in Sources */,
 				D34E5FAC25393B4C00566957 /* Experience.rcproject in Sources */,
+				D3B628E1255B353F00778A9D /* HighScoreStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +292,7 @@
 				DEVELOPMENT_TEAM = Y975RXV2SM;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Arcade Hoops/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +314,7 @@
 				DEVELOPMENT_TEAM = Y975RXV2SM;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Arcade Hoops/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

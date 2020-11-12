@@ -40,43 +40,63 @@ class GameManager: ObservableObject {
     
     var ballState: BallState = .inHands
     
-    let ball: HasPhysics
+    let ballPrefab: HasPhysics
+    var ball: HasPhysics
     let player: Entity
     
-    let triggerVolume: TriggerVolume
+    let hoopTrigger: TriggerVolume
+    let groundTrigger: TriggerVolume
     
     init() {
         arView = ARView(frame: .zero, cameraMode: .ar, automaticallyConfigureSession: true)
         
         arView.scene.addAnchor(boxAnchor)
         
-        ball = boxAnchor.ball as! HasPhysics
-        ball.physicsBody!.massProperties.mass = 1.0
-        ball.physicsBody!.mode = .kinematic
+        ballPrefab = boxAnchor.ball as! HasPhysics
+        ballPrefab.physicsBody!.massProperties.mass = 1.0
+        ballPrefab.physicsBody!.mode = .kinematic
+        ballPrefab.removeFromParent()
+        
+        ball = ballPrefab.clone(recursive: true)
+        boxAnchor.addChild(ball)
         
         player = boxAnchor.player!
         
-        triggerVolume = TriggerVolume(shape: ShapeResource.generateBox(size: [0.1,0.01,0.1]), filter: .default)
-        boxAnchor.addChild(triggerVolume)
-        triggerVolume.transform.translation = [0.0,0.36,-0.25]
+        hoopTrigger = TriggerVolume(shape: ShapeResource.generateBox(size: [0.1,0.01,0.1]), filter: .default)
+        boxAnchor.addChild(hoopTrigger)
+        hoopTrigger.transform.translation = [0.0,0.36,-0.25]
+        
+        groundTrigger = TriggerVolume(shape: ShapeResource.generateBox(size: [1.0,0.01,1.0]), filter: .default)
+        boxAnchor.addChild(groundTrigger)
+        groundTrigger.transform.translation = [0.0,0.005,-0.25]
         
         sceneUpdate = arView.scene.publisher(for: SceneEvents.Update.self).sink(receiveValue: everyFrame(frameUpdate:))
         collisionHappened = arView.scene.publisher(for: CollisionEvents.Began.self).sink(receiveValue: collisionEventBegan(collisionEvent:))
     }
     
     deinit {
-        boxAnchor.removeChild(triggerVolume)
+        boxAnchor.removeChild(hoopTrigger)
+        boxAnchor.removeChild(groundTrigger)
+        arView.scene.removeAnchor(boxAnchor)
     }
     
     func collisionEventBegan(collisionEvent: CollisionEvents.Began) {
         let a = collisionEvent.entityA
         let b = collisionEvent.entityB
         
+        if (a == groundTrigger || b == groundTrigger) && (a == ball || b == ball) {
+            print("Ground")
+            ballState = .inHands
+            ball.removeFromParent()
+            ball = ballPrefab.clone(recursive: true)
+            boxAnchor.addChild(ball)
+        }
         if ballState == .inAir {
-            if (a == triggerVolume || b == triggerVolume) && (a == ball || b == ball) {
+            if (a == hoopTrigger || b == hoopTrigger) && (a == ball || b == ball) {
+                print("Bucket")
                 madeCount += 1
-                print(madeCount)
                 ballState = .hasCollided
+                return
             }
         }
     }
@@ -121,10 +141,6 @@ class GameManager: ObservableObject {
         switch ballState {
         case .inAir, .hasCollided:
             ball.applyLinearImpulse(Float(dt)*6*0.035*[0.0,-9.8,0.0], relativeTo: boxAnchor)
-            if ball.transform.translation.y < 0.0375 {
-                ballState = .inHands
-                ball.physicsBody!.mode = .kinematic
-            }
         case .inHands:
             ball.transform.translation = startingBallTranslation + sideToSide
         }
