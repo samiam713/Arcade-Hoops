@@ -11,7 +11,6 @@
 		F4CC48102557A90500F112EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CC480F2557A90500F112EB /* SceneDelegate.swift */; };
 		F4CC48122557A90500F112EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CC48112557A90500F112EB /* ContentView.swift */; };
 		F4CC48142557A90800F112EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4CC48132557A90800F112EB /* Assets.xcassets */; };
-		F4CC48172557A90800F112EB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4CC48162557A90800F112EB /* Preview Assets.xcassets */; };
 		F4CC481A2557A90800F112EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4CC48182557A90800F112EB /* LaunchScreen.storyboard */; };
 		F4CC48252557A90800F112EB /* Aracde_HoopsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CC48242557A90800F112EB /* Aracde_HoopsTests.swift */; };
 		F4CC48302557A90800F112EB /* Aracde_HoopsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CC482F2557A90800F112EB /* Aracde_HoopsUITests.swift */; };
@@ -40,7 +39,6 @@
 		F4CC480F2557A90500F112EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F4CC48112557A90500F112EB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F4CC48132557A90800F112EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F4CC48162557A90800F112EB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F4CC48192557A90800F112EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4CC481B2557A90800F112EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4CC48202557A90800F112EB /* Aracde-HoopsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Aracde-HoopsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,17 +103,8 @@
 				F4CC48132557A90800F112EB /* Assets.xcassets */,
 				F4CC48182557A90800F112EB /* LaunchScreen.storyboard */,
 				F4CC481B2557A90800F112EB /* Info.plist */,
-				F4CC48152557A90800F112EB /* Preview Content */,
 			);
 			path = "Aracde-Hoops";
-			sourceTree = "<group>";
-		};
-		F4CC48152557A90800F112EB /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				F4CC48162557A90800F112EB /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		F4CC48232557A90800F112EB /* Aracde-HoopsTests */ = {
@@ -240,7 +229,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4CC481A2557A90800F112EB /* LaunchScreen.storyboard in Resources */,
-				F4CC48172557A90800F112EB /* Preview Assets.xcassets in Resources */,
 				F4CC48142557A90800F112EB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,7 +425,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Aracde-Hoops/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 5U22JX89C4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Aracde-Hoops/Info.plist";
@@ -458,7 +446,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Aracde-Hoops/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 5U22JX89C4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Aracde-Hoops/Info.plist";
