@@ -8,6 +8,13 @@
 import UIKit
 import SwiftUI
 
+var globalWindow: UIWindow? = nil
+var currentUser: String? = nil
+
+func toView<T: View>(view: T) {
+    globalWindow?.rootViewController = UIHostingController(rootView: view)
+}
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -15,15 +22,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        print(UIScreen.main.bounds.height)
+//        print(UIScreen.main.bounds.height)
         // Create the SwiftUI view that provides the window contents.
-        let contentView = GameView()
+        let contentView = ContentView()
 
         // Use a UIHostingController as window root view controller.
         let window = UIWindow(frame: UIScreen.main.bounds)
         window.rootViewController = UIHostingController(rootView: contentView)
         self.window = window
+        globalWindow = window
         window.makeKeyAndVisible()
+        highScoreStore.attemptUpdate()
         return true
     }
 

@@ -28,7 +28,7 @@ class CloudCommunicator {
     
     static let urlComponents: URLComponents = {
         var urlComponents = URLComponents()
-        urlComponents.host = "www.google.com"
+        urlComponents.host = "108.60.34.132"
         urlComponents.port = 80
         urlComponents.scheme = "http"
         return urlComponents
@@ -38,8 +38,8 @@ class CloudCommunicator {
         var urlComponents = Self.urlComponents
         urlComponents.queryItems = [.init(name: "attemptLogin", value: "true")]
         let url = urlComponents.url!
-        
         var request = URLRequest(url: url)
+        request.timeoutInterval = 10
         request.httpMethod = "GET"
         request.httpBody = try! encoder.encode(UserData(username: username, password: password))
         
@@ -57,6 +57,7 @@ class CloudCommunicator {
                 badLogin()
             }
         }
+        
         dataTask.resume()
     }
     
@@ -66,6 +67,7 @@ class CloudCommunicator {
         let url = urlComponents.url!
         
         var request = URLRequest(url: url)
+        request.timeoutInterval = 10
         request.httpMethod = "GET"
         
         let dataTask = URLSession.shared.dataTask(with: request) {(data: Data?, response: URLResponse?, error: Error?) in
@@ -78,6 +80,7 @@ class CloudCommunicator {
             
             uponSuccess(userScores)
         }
+        
         dataTask.resume()
         
     }
@@ -88,6 +91,7 @@ class CloudCommunicator {
         let url = urlComponents.url!
         
         var request = URLRequest(url: url)
+        request.timeoutInterval = 10
         request.httpMethod = "POST"
         request.httpBody = try! encoder.encode(UserScore(score: score, username: username))
         
@@ -101,6 +105,7 @@ class CloudCommunicator {
             
             if !successResponse.success {anyFailure()}
         }
+        
         dataTask.resume()
     }
     
@@ -110,6 +115,7 @@ class CloudCommunicator {
         let url = urlComponents.url!
         
         var request = URLRequest(url: url)
+        request.timeoutInterval = 10
         request.httpMethod = "POST"
         request.httpBody = try! encoder.encode(UserData(username: username, password: password))
         

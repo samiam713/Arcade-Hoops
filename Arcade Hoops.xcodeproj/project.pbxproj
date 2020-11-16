@@ -13,9 +13,13 @@
 		D34E5FAC25393B4C00566957 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = D34E5FAB25393B4C00566957 /* Experience.rcproject */; };
 		D34E5FAE25393B4D00566957 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D34E5FAD25393B4D00566957 /* Assets.xcassets */; };
 		D34E5FB125393B4D00566957 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D34E5FB025393B4D00566957 /* Preview Assets.xcassets */; };
+		D34EEB0B2562E2D60017AC4F /* GameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34EEB0A2562E2D60017AC4F /* GameOverView.swift */; };
+		D34EEB0E25630A720017AC4F /* Forever.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D34EEB0D25630A720017AC4F /* Forever.m4a */; };
 		D3B628D4255B205F00778A9D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B628D3255B205F00778A9D /* LoginView.swift */; };
 		D3B628DC255B26C000778A9D /* CloudCommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B628DB255B26C000778A9D /* CloudCommunicator.swift */; };
 		D3B628E1255B353F00778A9D /* HighScoreStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B628E0255B353F00778A9D /* HighScoreStore.swift */; };
+		D3B6CF21255CBBCB0022BD2D /* LoggedInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B6CF20255CBBCB0022BD2D /* LoggedInView.swift */; };
+		D3D281F8255D0D6E00B78173 /* HighScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D281F7255D0D6E00B78173 /* HighScoreView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +31,13 @@
 		D34E5FAD25393B4D00566957 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D34E5FB025393B4D00566957 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D34E5FB225393B4D00566957 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D34EEB0A2562E2D60017AC4F /* GameOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverView.swift; sourceTree = "<group>"; };
+		D34EEB0D25630A720017AC4F /* Forever.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Forever.m4a; sourceTree = "<group>"; };
 		D3B628D3255B205F00778A9D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		D3B628DB255B26C000778A9D /* CloudCommunicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudCommunicator.swift; sourceTree = "<group>"; };
 		D3B628E0255B353F00778A9D /* HighScoreStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreStore.swift; sourceTree = "<group>"; };
+		D3B6CF20255CBBCB0022BD2D /* LoggedInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedInView.swift; sourceTree = "<group>"; };
+		D3D281F7255D0D6E00B78173 /* HighScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,16 +70,16 @@
 		D34E5FA625393B4C00566957 /* Arcade Hoops */ = {
 			isa = PBXGroup;
 			children = (
-				D340A89A2557A82B00EA958A /* GameManager.swift */,
-				D34E5FA925393B4C00566957 /* GameView.swift */,
+				D34EEB0D25630A720017AC4F /* Forever.m4a */,
 				D34E5FA725393B4C00566957 /* AppDelegate.swift */,
-				D3B628D3255B205F00778A9D /* LoginView.swift */,
+				D3D281F6255D0D5900B78173 /* HighScores */,
+				D3D281F4255D0D3E00B78173 /* Game */,
+				D3D281F3255D0D1600B78173 /* Menus */,
 				D3B628DB255B26C000778A9D /* CloudCommunicator.swift */,
 				D34E5FAB25393B4C00566957 /* Experience.rcproject */,
 				D34E5FAD25393B4D00566957 /* Assets.xcassets */,
 				D34E5FB225393B4D00566957 /* Info.plist */,
 				D34E5FAF25393B4D00566957 /* Preview Content */,
-				D3B628E0255B353F00778A9D /* HighScoreStore.swift */,
 			);
 			path = "Arcade Hoops";
 			sourceTree = "<group>";
@@ -82,6 +90,34 @@
 				D34E5FB025393B4D00566957 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D3D281F3255D0D1600B78173 /* Menus */ = {
+			isa = PBXGroup;
+			children = (
+				D3B6CF20255CBBCB0022BD2D /* LoggedInView.swift */,
+				D3B628D3255B205F00778A9D /* LoginView.swift */,
+			);
+			path = Menus;
+			sourceTree = "<group>";
+		};
+		D3D281F4255D0D3E00B78173 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				D340A89A2557A82B00EA958A /* GameManager.swift */,
+				D34E5FA925393B4C00566957 /* GameView.swift */,
+				D34EEB0A2562E2D60017AC4F /* GameOverView.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		D3D281F6255D0D5900B78173 /* HighScores */ = {
+			isa = PBXGroup;
+			children = (
+				D3B628E0255B353F00778A9D /* HighScoreStore.swift */,
+				D3D281F7255D0D6E00B78173 /* HighScoreView.swift */,
+			);
+			path = HighScores;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +179,7 @@
 			files = (
 				D34E5FB125393B4D00566957 /* Preview Assets.xcassets in Resources */,
 				D34E5FAE25393B4D00566957 /* Assets.xcassets in Resources */,
+				D34EEB0E25630A720017AC4F /* Forever.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,8 +190,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D34EEB0B2562E2D60017AC4F /* GameOverView.swift in Sources */,
 				D34E5FAA25393B4C00566957 /* GameView.swift in Sources */,
+				D3B6CF21255CBBCB0022BD2D /* LoggedInView.swift in Sources */,
 				D340A89B2557A82B00EA958A /* GameManager.swift in Sources */,
+				D3D281F8255D0D6E00B78173 /* HighScoreView.swift in Sources */,
 				D3B628DC255B26C000778A9D /* CloudCommunicator.swift in Sources */,
 				D34E5FA825393B4C00566957 /* AppDelegate.swift in Sources */,
 				D3B628D4255B205F00778A9D /* LoginView.swift in Sources */,
