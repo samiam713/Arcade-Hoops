@@ -175,14 +175,14 @@ struct LoginView : View {
                     failMessage = IdentifiableString(string: "No blanks allowed!")
                     return
                 }
-                if userName == "samshoota" && password == "password" {
-                    currentUser = "samshoota"
-                    toView(view: LoggedInView())
-                } else {
-                    failMessage = IdentifiableString(string: "User does not exist!")
-                }
+//                if userName == "samshoota" && password == "password" {
+//                    currentUser = "samshoota"
+//                    toView(view: LoggedInView())
+//                } else {
+//                    failMessage = IdentifiableString(string: "User does not exist!")
+//                }
                 
-                fatalError("Delete most of above when ready")
+//                fatalError("Delete most of above when ready")
                 
                 CloudCommunicator.attemptLogin(username: userName, password: password, goodLogin: {
                     currentUser = userName
@@ -257,8 +257,8 @@ struct SignUpView : View {
                 }
                 
                 currentUser = userName
-                return;
-                fatalError("DELETE 2 LINEs ABOVE WHEN READY")
+//                return;
+//                fatalError("DELETE 2 LINEs ABOVE WHEN READY")
                 
                 CloudCommunicator.createUser(username: userName, password: password, networkFailure: {
                     failMessage = .init(string: "Bad Connection")

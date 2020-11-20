@@ -35,6 +35,8 @@ class CloudCommunicator {
     }()
     
     static func attemptLogin(username: String, password: String, goodLogin: @escaping () -> (), networkFailure: @escaping () -> (), badLogin: @escaping () -> ()) {
+        
+        
         var urlComponents = Self.urlComponents
         urlComponents.queryItems = [.init(name: "attemptLogin", value: "true")]
         let url = urlComponents.url!
@@ -44,17 +46,20 @@ class CloudCommunicator {
         request.httpBody = try! encoder.encode(UserData(username: username, password: password))
         
         let dataTask = URLSession.shared.dataTask(with: request) {(data: Data?, response: URLResponse?, error: Error?) in
-            guard let data = data, let response = response as? HTTPURLResponse, (200..<300).contains(response.statusCode), error == nil else {networkFailure(); return}
-            
-            guard let successResponse = try? decoder.decode(SuccessResponse.self, from: data) else {
-                print(String(data: data, encoding: .utf8) ?? "HTTP RESPONSE BODY NOT VALID UTF-8 STRING")
-                fatalError("HTTP response body not decodable as SuccessResponse")
-            }
-
-            if successResponse.success {
-                goodLogin()
-            } else {
-                badLogin()
+            DispatchQueue.main.async {
+                
+                guard let data = data, let response = response as? HTTPURLResponse, (200..<300).contains(response.statusCode), error == nil else {networkFailure(); return}
+                
+                guard let successResponse = try? decoder.decode(SuccessResponse.self, from: data) else {
+                    print(String(data: data, encoding: .utf8) ?? "HTTP RESPONSE BODY NOT VALID UTF-8 STRING")
+                    fatalError("HTTP response body not decodable as SuccessResponse")
+                }
+                
+                if successResponse.success {
+                    goodLogin()
+                } else {
+                    badLogin()
+                }
             }
         }
         
@@ -71,14 +76,16 @@ class CloudCommunicator {
         request.httpMethod = "GET"
         
         let dataTask = URLSession.shared.dataTask(with: request) {(data: Data?, response: URLResponse?, error: Error?) in
-            guard let data = data, let response = response as? HTTPURLResponse, (200..<300).contains(response.statusCode), error == nil else {networkFailure(); return}
-            
-            guard let userScores = try? decoder.decode([UserScore].self, from: data) else {
-                print(String(data: data, encoding: .utf8) ?? "HTTP RESPONSE BODY NOT VALID UTF-8 STRING")
-                fatalError("HTTP response body not decodable as SuccessResponse")
+            DispatchQueue.main.async {
+                guard let data = data, let response = response as? HTTPURLResponse, (200..<300).contains(response.statusCode), error == nil else {networkFailure(); return}
+                
+                guard let userScores = try? decoder.decode([UserScore].self, from: data) else {
+                    print(String(data: data, encoding: .utf8) ?? "HTTP RESPONSE BODY NOT VALID UTF-8 STRING")
+                    fatalError("HTTP response body not decodable as SuccessResponse")
+                }
+                
+                uponSuccess(userScores)
             }
-            
-            uponSuccess(userScores)
         }
         
         dataTask.resume()
@@ -96,14 +103,16 @@ class CloudCommunicator {
         request.httpBody = try! encoder.encode(UserScore(score: score, username: username))
         
         let dataTask = URLSession.shared.dataTask(with: request) {(data: Data?, response: URLResponse?, error: Error?) in
-            guard let data = data, let response = response as? HTTPURLResponse, (200..<300).contains(response.statusCode), error == nil else {anyFailure(); return}
-            
-            guard let successResponse = try? decoder.decode(SuccessResponse.self, from: data) else {
-                print(String(data: data, encoding: .utf8) ?? "HTTP RESPONSE BODY NOT VALID UTF-8 STRING")
-                fatalError("HTTP response body not decodable as SuccessResponse")
+            DispatchQueue.main.async {
+                guard let data = data, let response = response as? HTTPURLResponse, (200..<300).contains(response.statusCode), error == nil else {anyFailure(); return}
+                
+                guard let successResponse = try? decoder.decode(SuccessResponse.self, from: data) else {
+                    print(String(data: data, encoding: .utf8) ?? "HTTP RESPONSE BODY NOT VALID UTF-8 STRING")
+                    fatalError("HTTP response body not decodable as SuccessResponse")
+                }
+                
+                if !successResponse.success {anyFailure()}
             }
-            
-            if !successResponse.success {anyFailure()}
         }
         
         dataTask.resume()
@@ -121,17 +130,19 @@ class CloudCommunicator {
         
         
         let dataTask = URLSession.shared.dataTask(with: request) {(data: Data?, response: URLResponse?, error: Error?) in
-            guard let data = data, let response = response as? HTTPURLResponse, (200..<300).contains(response.statusCode), error == nil else {networkFailure(); return}
-            
-            guard let successResponse = try? decoder.decode(SuccessResponse.self, from: data) else {
-                print(String(data: data, encoding: .utf8) ?? "HTTP RESPONSE BODY NOT VALID UTF-8 STRING")
-                fatalError("HTTP response body not decodable as SuccessResponse")
-            }
-            
-            if successResponse.success {
-                goodAttempt()
-            } else {
-                badAttempt()
+            DispatchQueue.main.async {
+                guard let data = data, let response = response as? HTTPURLResponse, (200..<300).contains(response.statusCode), error == nil else {networkFailure(); return}
+                
+                guard let successResponse = try? decoder.decode(SuccessResponse.self, from: data) else {
+                    print(String(data: data, encoding: .utf8) ?? "HTTP RESPONSE BODY NOT VALID UTF-8 STRING")
+                    fatalError("HTTP response body not decodable as SuccessResponse")
+                }
+                
+                if successResponse.success {
+                    goodAttempt()
+                } else {
+                    badAttempt()
+                }
             }
         }
         dataTask.resume()
